@@ -1,0 +1,102 @@
+[6/25/2026 2:18 AM] Khim Sivchhorng: <!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khmer Pro Gaming Portal</title>
+    <!-- ទាញយក Tailwind CSS សម្រាប់ Layout ស្អាតទាន់សម័យ -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body { font-family: 'Kantumruy Pro', sans-serif; background-color: #0f172a; color: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-slate-900 border-b border-slate-800 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-cyan-400 tracking-wider">🎮 KHMER-GAMING</a>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-cyan-400 transition">ទំព័រដើម</a>
+                <a href="#" class="hover:text-cyan-400 transition">ហ្គេមពេញនិយម</a>
+                <a href="#" class="hover:text-cyan-400 transition">ទំនាក់ទំនង</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Banner Ad Place (កន្លែងដាក់ Ads ខាងលើ) -->
+    <div class="container mx-auto my-4 p-2 bg-slate-800 rounded border border-slate-700 text-center text-xs text-slate-400">
+        <p>ADVERTISEMENT</p>
+        <div class="h-20 flex items-center justify-center text-sm font-semibold text-slate-500">
+            <!-- យកកូដ Google AdSense មកដាក់ទីនេះ -->
+            [ ទីតាំងពាណិជ្ជកម្ម Banner 728x90 ]
+        </div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <main class="container mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        
+        <!-- Game Display Zone (អេក្រង់លេងហ្គេមធំ) -->
+        <div class="lg:col-span-3 bg-slate-900 p-4 rounded-xl border border-slate-800 shadow-2xl">
+            <h1 class="text-xl font-bold text-cyan-400 mb-3 flex items-center gap-2">
+                🚀 កំពុងលេង៖ <span class="text-white">Cyber Neon Runner</span>
+            </h1>
+            
+            <!-- កន្លែងបង្កប់ហ្គេម (Game Canvas/Iframe Container) -->
+            <div class="relative w-full aspect-video bg-black rounded-lg overflow-hidden border border-slate-700 flex items-center justify-center">
+                <iframe src="game.html" class="w-full h-full border-none" allowfullscreen></iframe>
+            </div>
+
+            <!-- ប៊ូតុងបញ្ជា និង Share -->
+            <div class="flex justify-between items-center mt-4 p-2 bg-slate-800 rounded-lg">
+                <p class="text-sm text-slate-300">🎮 បញ្ជា៖ ប្រើប៊ូតុង <span class="bg-cyan-500 px-1.5 py-0.5 rounded text-black font-bold">↑</span> ឬ <span class="bg-cyan-500 px-1.5 py-0.5 rounded text-black font-bold">Spacebar</span> ដើម្បីលោត</p>
+                <button onclick="location.reload()" class="bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-1.5 rounded font-bold transition text-sm">
+                    🔄 លេងឡើងវិញ
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Zone (ហ្គេមផ្សេងៗ និង Ads ខាងស្តាំ) -->
+        <div class="space-y-6">
+            <!-- Sidebar Ad Place (កន្លែងដាក់ Ads ចំហៀង) -->
+            <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 text-center text-xs text-slate-400">
+                <p class="mb-2">ADVERTISEMENT</p>
+                <div class="h-60 bg-slate-950 rounded flex items-center justify-center text-sm text-slate-600">
+                    [ ទីតាំង Ads 300x250 ]
+                </div>
+            </div>
+
+            <!-- More Games List -->
+            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                <h3 class="text-md font-bold text-cyan-400 mb-3 border-b border-slate-800 pb-2">🎯 ហ្គេមណែនាំផ្សេងទៀត</h3>
+                <div class="space-y-3">
+                    <div class="flex gap-3 p-2 hover:bg-slate-800 rounded cursor-pointer transition">
+ <div class="w-16 h-12 bg-slate-700 rounded bg-cover" style="background-image: url('https://picsum.photos/100/100?random=1');"></div>
+                        <div>
+                            <h4 class="text-sm font-semibold">Moto Rush 3D</h4>
+                            <p class="text-xs text-slate-400">ហ្គេមជិះម៉ូតូ</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 p-2 hover:bg-slate-800 rounded cursor-pointer transition">
+                        <div class="w-16 h-12 bg-slate-700 rounded bg-cover" style="background-image: url('https://picsum.photos/100/100?random=2');"></div>
+                        <div>
+                            <h4 class="text-sm font-semibold">Angkor Voxel World</h4>
+                            <p class="text-xs text-slate-400">ហ្គេមផ្សងព្រេង</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-6 mt-12 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Khmer Gaming Portal. All Rights Reserved.</p>
+        <div class="flex justify-center gap-4 mt-2 text-xs">
+            <a href="#" class="hover:underline">Privacy Policy</a>
+            <a href="#" class="hover:underline">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+</html>
